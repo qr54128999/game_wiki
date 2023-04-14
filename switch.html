@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>遊戲wiki</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- 自定義樣式 -->
+    <style>
+      body {
+        background-image: url("adventure.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: black;
+        color:white;
+      }
+      h1 {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 4rem;
+        color: #FFF;
+        text-shadow: 2px 2px #000;
+        text-align: center;
+        margin-top: 10%;
+      }
+      .weapon1 {
+        background-image: url("weapon1.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 200px;
+        width: 200px;
+        margin: 0 auto;
+        display: block;
+      }
+      .weapon2 {
+        background-image: url("weapon2.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 200px;
+        width: 200px;
+        margin: 0 auto;
+        display: block;
+      }
+      .spacer {
+height: 50px; /* 設定高度 */
+background-color: #f2f2f2; /* 設定背景顏色 */
+}
+.carousel-item img {
+			width: 600px;
+			height: 500px;
+		  }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">我的遊戲</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar1">
+        <ul class="navbar-nav me-auto">           
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">主機</a>
+            <div class="dropdown-menu bg-dark">
+              <a class="dropdown-item text-white" href="switch.html">Switch</a>
+              <a class="dropdown-item text-white" href="ps4.html">PS4</a>
+              <a class="dropdown-item text-white" href="#">XBOX</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">遊戲</a>
+            <div class="dropdown-menu bg-dark">
+              <a class="dropdown-item text-white" href="#">瑪利歐賽車系列</a>
+              <a class="dropdown-item text-white" href="monster_hunta_world.html">魔物獵人系列</a>
+              <a class="dropdown-item text-white" href="#">決勝時刻系列</a>
+            </div>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="輸入遊戲">
+          <button class="btn btn-outline-secondary" type="submit">Search</button>
+        </form>  
+      </div>		
+    </div>
+  </nav>
+
+    <!-- 內容區 -->
+    <main>	
+  <div class="container">
+    <h1 class="text-center mt-5">Nintendo Switch遊戲</h1>
+	
+    <!-- 圖片輪播 -->
+	<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+	  <!-- 輪播指示 -->
+	  <ol class="carousel-indicators">
+		<li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+		<li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+		<li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+	  </ol>
+	  <!-- 輪播內容 -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <a href="https://www.nintendo.com/games/detail/mario-kart-8-deluxe-switch/"><img src="images\馬力歐賽車.jpg" class="d-block w-100" alt="馬力歐賽車"></a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>馬力歐賽車</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href="https://www.nintendo.com/games/detail/super-smash-bros-ultimate-switch/"><img src="images\任天堂大亂鬥.jpg" class="d-block w-100" alt="任天堂大亂鬥"></a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>任天堂大亂鬥</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href="https://www.nintendo.com/games/detail/kirby-star-allies-switch/"><img src="images\星之卡比.jpg" class="d-block w-100" alt="星之卡比"></a>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>星之卡比</h5>
+      </div>
+    </div>
+  </div>
+
+	  <!-- 輪播控制 -->
+	  <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+		<span class="carousel-control-prev-icon"></span>
+		<span class="visually-hidden">Previous</span></a>
+	  <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+		<span class="carousel-control-next-icon"></span>
+		<span class="visually-hidden">Next</span></a>
+	</div>
+
+  </div>
+</main>
+
+	
+    <!-- 頁尾 -->
+	<footer>
+	  <div class="container">
+	    <hr>              
+        <p>&copy; 2021任天堂多媒體&middot;<a href="#">隱私權政策</a>&middot;<a href="#">服務條款</a></p>
+		<p class="text-end"><a href="#">Back to top</a></p>
+      </div>
+    </footer> 	
+  </body>
+</html>

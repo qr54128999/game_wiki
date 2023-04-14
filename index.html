@@ -1,0 +1,144 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <title>遊戲wiki</title>
+        <meta charset="UTF-8">
+	      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	      <!-- 引入Bootstrap CSS -->
+	      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	      <!-- 自定義樣式 -->
+        <style>
+          body {
+            background-image: url("adventure.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: black;
+            color:white;
+          }
+          h1 {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 4rem;
+            color: #FFF;
+            text-shadow: 2px 2px #000;
+            text-align: center;
+            margin-top: 10%;
+          }
+          .weapon1 {
+            background-image: url("weapon1.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            height: 200px;
+            width: 200px;
+            margin: 0 auto;
+            display: block;
+          }
+          .weapon2 {
+            background-image: url("weapon2.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            height: 200px;
+            width: 200px;
+            margin: 0 auto;
+            display: block;
+          }
+          .spacer {
+  height: 50px; /* 設定高度 */
+  background-color: #f2f2f2; /* 設定背景顏色 */
+}
+        </style>
+    </head>
+<body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">我的遊戲</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar1">
+            <ul class="navbar-nav me-auto">           
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">主機</a>
+                <div class="dropdown-menu bg-dark">
+                  <a class="dropdown-item text-white" href="switch.html">Switch</a>
+                  <a class="dropdown-item text-white" href="ps4.html">PS4</a>
+                  <a class="dropdown-item text-white" href="#">XBOX</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">遊戲</a>
+                <div class="dropdown-menu bg-dark">
+                  <a class="dropdown-item text-white" href="#">瑪利歐賽車系列</a>
+                  <a class="dropdown-item text-white" href="monster_hunta_world.html">魔物獵人系列</a>
+                  <a class="dropdown-item text-white" href="#">決勝時刻系列</a>
+                </div>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="輸入遊戲">
+              <button class="btn btn-outline-secondary" type="submit">Search</button>
+            </form>  
+          </div>		
+        </div>
+      </nav>
+
+      <main>	
+        <div class="container">
+          <h1 class="text-center mt-5">遊戲天堂</h1>
+          <hr>
+          <div class="row">
+            <div class="col-md-7">
+              <h2><small></small></h2>
+              <p class="lead">歡迎來到遊戲天堂！這裡有最新最熱門的遊戲主機，
+                       無論你喜歡switch、ps5、xbox或其他主機，都能在這裡找到心儀的遊戲。</p>
+            <p>在這場冒險旅程中，你可以體驗到最豐富多彩的遊戲世界，
+                      從馬力歐賽車、魔物獵人、決勝時刻到其他精彩遊戲，
+                      無論你是喜歡冒險、動作、策略還是休閒遊戲，都能在這裡找到適合自己的遊戲。</p>
+            </div>
+            <div class="col-md-5">
+              <img src="images/games.jpg" class="img-fluid">
+            </div>
+          </div>	
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card bg-dark text-white">
+                <div class="card-header">
+                  <h5 class="card-title"><span class="text-danger">經典：</span>馬力歐賽車</h5>
+                </div>
+                <div class="game1">
+                  <img class="card-img-top" src="images/馬力歐賽車.jpg">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <div class="card-body">
+                      <p class="card-text text-warning">這款經典遊戲已經陪伴了無數玩家成長，讓你在遊戲中感受到熱血競技的快感。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card bg-dark text-white">
+                <div class="card-header">
+                  <h5 class="card-title"><span class="text-danger">動作：</span>魔物獵人</h5>
+                </div>
+                <div class="game2">
+                  <img class="card-img-top" src="images/魔物獵人.jpg">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <div class="card-body">
+                      <p class="card-text text-warning">在這款遊戲中，你可以扮演獵人，與各種充滿挑戰的魔物展開戰鬥，體驗真正的狩獵快感。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+      </main>
+      
+      
+</body>
+</html>

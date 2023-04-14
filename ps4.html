@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>遊戲wiki</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- 自定義樣式 -->
+    <style>
+      body {
+        background-image: url("adventure.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: black;
+        color:white;
+      }
+      h1 {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 4rem;
+        color: #FFF;
+        text-shadow: 2px 2px #000;
+        text-align: center;
+        margin-top: 10%;
+      }
+      .weapon1 {
+        background-image: url("weapon1.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 200px;
+        width: 200px;
+        margin: 0 auto;
+        display: block;
+      }
+      .weapon2 {
+        background-image: url("weapon2.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 200px;
+        width: 200px;
+        margin: 0 auto;
+        display: block;
+      }
+      .spacer {
+        height: 50px; /* 設定高度 */
+        background-color: #f2f2f2; /* 設定背景顏色 */
+      }
+      
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">我的遊戲</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar1">
+        <ul class="navbar-nav me-auto">           
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">主機</a>
+            <div class="dropdown-menu bg-dark">
+              <a class="dropdown-item text-white" href="switch.html">Switch</a>
+              <a class="dropdown-item text-white" href="ps4.html">PS4</a>
+              <a class="dropdown-item text-white" href="#">XBOX</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">遊戲</a>
+            <div class="dropdown-menu bg-dark">
+              <a class="dropdown-item text-white" href="#">瑪利歐賽車系列</a>
+              <a class="dropdown-item text-white" href="monster_hunta_world.html">魔物獵人系列</a>
+              <a class="dropdown-item text-white" href="#">決勝時刻系列</a>
+            </div>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="輸入遊戲">
+          <button class="btn btn-outline-secondary" type="submit">Search</button>
+        </form>  
+      </div>		
+    </div>
+  </nav>
+
+    <main>	
+  <div class="container">
+    <h1 class="text-center mt-5">PlayStation 4</h1>
+	
+    <!-- 第一個介紹 -->
+    <hr>
+    <div class="row">
+      <div class="col-md-7">
+        <h2>遊戲機<small>（Sony PlayStation 4）</small></h2>
+        <p>
+	  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseContent">
+		介紹PS4</a>
+	  
+		</p>
+	<div class="collapse" id="collapseContent">
+	  <div class="card card-body" style="color: black;">
+      PlayStation 4（簡稱PS4）是由索尼互動娛樂開發的第8世代家用遊戲機，於2013年11月上市。它是 PlayStation 遊戲機系列的第四代產品，是當時最流行和熱銷的遊戲機之一，擁有大量的遊戲選擇和各種獨家遊戲。
+  </div>
+	</div>
+      </div>
+      <div class="col-md-5 order-md-1 d-flex justify-content-center">
+        <img src="ps4.jpg" class="img-fluid align-self-center">
+      </div>
+    </div>	
+	
+    <!-- 第二個介紹 -->
+    <hr>
+    <div class="row">
+      <div class="col-md-7 order-md-5">
+	    <h2>遊戲體驗<small>(操控和遊戲內容)</small></h2>
+        <p class="lead">PS4的手柄採用觸控板設計，操作更加流暢自然。遊戲內容方面，PS4擁有各種經典遊戲，例如《絕地求生》、《魔物獵人：世界》等，並且還有許多獨家遊戲，例如《漫威蜘蛛人》、《最後生還者》等。</p>
+	    <p>此外，PS4還支持多人遊戲和網路連接，玩家可以和朋友一起玩遊戲，或者經過網路連接和其他玩家競爭，增加遊戲樂趣。</p>
+      </div>
+      <div class="col-md-5 order-md-1 d-flex justify-content-center">
+        <img src="ps4-controller.jpg" class="img-fluid align-self-center">
+      </div>
+    </div>
+		
+	    <!-- 第三個介紹 -->
+    <hr>
+	<div class="row">
+	  <div class="col-md-7">
+		<h2>遊戲製作<small>（遊戲開發者）</small></h2>
+		<p class="lead">PS4的遊戲開發者們經過多年的努力，創造出了各種精彩的遊戲，讓玩家們能夠享受到極致的遊戲體驗。</p>
+		<p>其中，一些遊戲已經成為了經典，如《最後生還者》、《神秘海域》、《戰神》等等，不僅擁有精美的畫面和音效，也有深刻的劇情和人物形象。</p>
+		<p>此外，PS4也提供了豐富的遊戲類型，無論你喜歡動作、冒險、競速、體育、角色扮演還是戰略類遊戲，都能在PS4上找到適合自己的遊戲。</p>
+	</div>
+  <div class="col-md-5 order-md-1 d-flex justify-content-center">
+    <img src="game.jpg" class="img-fluid align-self-center">
+  </div>
+</div> 
+
+	</main>
+	
+    <!-- 頁尾 -->
+	<footer>
+	  <div class="container">
+	    <hr>              
+        <p>&copy; 2021索尼多媒體&middot;<a href="#">隱私權政策</a>&middot;<a href="#">服務條款</a></p>
+		<p class="text-end"><a href="#">Back to top</a></p>
+      </div>
+    </footer> 	
+  </body>
+</html>
